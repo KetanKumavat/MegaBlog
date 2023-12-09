@@ -1,10 +1,10 @@
 import React, {useState} from 'react'
 import { useNavigate } from 'react-router-dom';
 import {login as authlogin} from '../store/authSlice' 
-import {useDispatch, Input,Logo} from "react-redux"
+import {Button, Input,Logo} from "./index"
 import { useDispatch } from 'react-redux';
 import {useForm } from 'react-hook-form'
-import {authService} from "../appWrite/config"
+import authService from "../appWrite/auth"
 
 function Login() {
     const dispatch = useDispatch()
