@@ -11,7 +11,7 @@ import AddPost from "./pages/AddPost";
 import Signup from "./pages/Signup";
 import EditPost from "./pages/EditPost";
 
-import Post from "./pages/Posts.jsx";
+import Post from "./pages/Post.jsx";
 
 import AllPosts from "./pages/AllPosts";
 
@@ -81,4 +81,4 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <RouterProvider router={router}/>
     </Provider>
   </React.StrictMode>,
-)
+);
