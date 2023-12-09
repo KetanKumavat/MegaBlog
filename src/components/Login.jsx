@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import {login as authlogin} from '../store/authSlice' 
 import {Button, Input,Logo} from "./index"
 import { useDispatch } from 'react-redux';
@@ -16,7 +16,7 @@ function Login() {
         try{
             const session = await authService.login(data)
             if(session){
-                const userData = await authService.getCuurentUser()
+                const userData = await authService.getCurrentUser()
                 if(userData){
                     dispatch(authlogin(userData))
                     navigate("/")
